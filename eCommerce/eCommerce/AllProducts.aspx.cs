@@ -21,15 +21,17 @@ namespace eCommerce
             if (!IsPostBack)
             {
                 productdis();
+                modView.Visible = false;
+                btnSave.Visible = false;
             }
-            
+
         }
         protected void productdis()
         {
-           // DataOps dOps = new DataOps();
-           // allProductTable.DataSource= dOps.GetData(query);
-           // allProductTable.DataBind();
-            
+            // DataOps dOps = new DataOps();
+            // allProductTable.DataSource= dOps.GetData(query);
+            // allProductTable.DataBind();
+
             SqlConnection con = new SqlConnection(test);
             con.Open();
             SqlCommand cmd = new SqlCommand(query, con);
@@ -66,12 +68,38 @@ namespace eCommerce
         {
             using (SqlConnection con = new SqlConnection(test))
             {
-                string query = "delete  from ProductTable where ProductID ='"+ProductID+"'";
+                string query = "delete  from ProductTable where ProductID ='" + ProductID + "'";
                 SqlCommand cmd = new SqlCommand(query, con);
                 con.Open();
                 cmd.ExecuteNonQuery();
             }
         }
-        
+
+        protected void btnEditMode_Click(object sender, EventArgs e)
+        {
+            allProductTable.Visible = false;
+            btnEditMode.Visible = false;
+            btnAddNewProduct.Visible = false;
+            modView.Visible = true;
+            btnSave.Visible = true;
+        }
+
+        protected void btnSave_Click(object sender, EventArgs e)
+        {
+            //if (!IsPostBack)
+
+            productdis();
+            allProductTable.Visible = true;
+            btnEditMode.Visible = true;
+            btnAddNewProduct.Visible = true;
+            modView.Visible = false;
+            btnSave.Visible = false;
+
+        }
+
+        protected void btnAddNewProduct_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ManagerAddProduct.aspx");
+        }
     }
 }
