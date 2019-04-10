@@ -1,8 +1,10 @@
 ﻿/* Move down content because we have a fixed navbar that is 50px tall */
 body {
     padding-top: 50px;
-    padding-bottom: 20px;
-    background-color:lightgrey;
+
+}
+*{
+    box-sizing:border-box;
 
 }
 
@@ -32,4 +34,157 @@ textarea {
     }
 }
 
+
+.navbar-collapse{
+    float:right;
+    font-weight:bold;
+}
+.search{
+    border-radius:20px;
+    width:200px;
+    height:30px;
+    margin-top:10px;
+    border:none;
+    margin-left:20px;
+    padding-left:20px;
+}
+
+/* Shop */
+
+
+
+
+.pTitle{
+    font-size:1.8em;
+}
+.price{
+    color:red;
+    font-size:1.2em;
+}
+.pDescription{
+    color:#232323;
+}
+.cName{
+    text-align:center;
+    margin:80px;
+}
+.product{
+    display:inline-block;
+    width:25%;
+    margin:0;
+    float:left;
+    text-align:center;
+}
+.line{
+    height:2px;
+    width:500px;
+    margin:50px auto;
+    background-color:black;
+    clear:both;
+
+}
+.moreBtn{
+    float:right;
+    background-color:rgba(10,10,10,0);
+    height:50px;
+    width:120px;
+    border:solid black 2px;
+    margin:40px 50px ;
+
+}
+.moreBtn:hover{
+    background-color:black;
+    color:white;
+}
+.btn-group{
+    width:100%;
+}
+.buyBtn:first-child{
+    background-color:aquamarine;
+}
+.buyBtn:last-child{
+    background-color:aqua;
+}
+.buyBtn {
+ 
+    height: 30px;
+    width: 40%;
+    border: none;
+    font-weight:600;
+
+    display:block;
+    margin:5px auto;
+}
+.buyBtn:hover {
+        background-color: white;
+       border: 2px solid #00FFA2;
+}
+
+
+/*Product detail*/
+
+.left{
+    float:left;
+    width:40%;
+    padding-top:50px;
+}
+.right {
+    float: right;
+    width:40%;
+}
+.product_view_main{
+    margin:100px auto;
+    padding:50px;
+}
+
+
+.clear-float{
+    clear:both;
+}
+.productDescription{
+    font-size:1.2em;
+    color:#545454;
+    margin-top:20px;
+}
+.productPrice{
+    font-size:1.8em;
+    color:black;
+    font-weight:bold;
+    margin-top:20px;
+}
+.productBtn{
+    height:50px;
+    width:120px;
+    border:2px solid;
+    border-radius:5px;
+    background-color:#ff7d6b;
+    font-size:1.5em;
+    margin-top:20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    height:20vh;
+    width:100vw;
+    max-width:100%;
+    background-color:black;
+    clear:both;
+    color:white;
+
+
+}
 
