@@ -10,7 +10,7 @@
 namespace eCommerce {
     
     
-    public partial class AllOrders {
+    public partial class EditOrder {
         
         /// <summary>
         /// form1 control.
@@ -22,13 +22,13 @@ namespace eCommerce {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// orderView control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView orderView;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
         /// SqlDataSource1 control.
@@ -40,12 +40,12 @@ namespace eCommerce {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
-        /// btnEdit control.
+        /// btnSave control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEdit;
+        protected global::System.Web.UI.WebControls.Button btnSave;
     }
 }
