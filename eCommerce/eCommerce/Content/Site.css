@@ -1,8 +1,10 @@
 ﻿/* Move down content because we have a fixed navbar that is 50px tall */
 body {
     padding-top: 50px;
-   
 
+}
+*{
+    box-sizing:border-box;
 }
 
 /* Wrapping element */
@@ -31,64 +33,56 @@ textarea {
     }
 }
 
-
-/* author : abid   */
-
-.navbar-collapse {
-    float: right;
-    font-weight: bold;
+.navbar-collapse{
+    float:right;
+    font-weight:bold;
 }
-
-.search {
-    border-radius: 20px;
-    width: 200px;
-    height: 30px;
-    margin-top: 10px;
-    border: none;
-    margin-left: 20px;
-    padding-left: 20px;
+.search{
+    border-radius:20px;
+    width:200px;
+    height:30px;
+    margin-top:10px;
+    border:none;
+    margin-left:20px;
+    padding-left:20px;
 }
-
 
 /* Shop */
 
 
 
 
-.price {
-    color: red;
+.price{
+    color:red;
 }
-
-.cName {
-    text-align: center;
-    margin: 80px;
+.cName{
+    text-align:center;
+    margin:80px;
 }
-
-.product {
-    display: inline-block;
-    width: 25%;
-    margin: 0;
-    float: left;
-    text-align: center;
+.product{
+    display:inline-block;
+    width:25%;
+    margin:0;
+    float:left;
+    text-align:center;
 }
+.line{
+    height:2px;
+    width:500px;
+    margin:50px auto;
+    background-color:black;
+    clear:both;
 
-.line {
-    height: 2px;
-    width: 500px;
-    margin: 50px auto;
-    background-color: black;
-    clear: both;
 }
+.moreBtn{
+    float:right;
+    background-color:rgba(10,10,10,0);
+    height:50px;
+    width:120px;
+    border:solid black 2px;
+    margin:40px 50px ;
 
-.moreBtn {
-    float: right;
-    background-color: rgba(10,10,10,0);
-    height: 50px;
-    width: 120px;
-    border: solid black 2px;
-    margin: 40px 50px;
 }
-
 .buyBtn {
     background-color: #00FFA2;
     height: 30px;
@@ -99,34 +93,46 @@ textarea {
 
 /*Product detail*/
 
-.left {
-    float: left;
-    width: 40%;
-    padding-top: 50px;
+.left{
+    float:left;
+    width:40%;
+    padding-top:50px;
 }
-
 .right {
     float: right;
-    width: 40%;
+    width:40%;
 }
-
-.product_view_main {
-    margin: 100px auto;
-    padding: 50px;
-}
-
-
-.clear-float {
-    clear: both;
+.product_view_main{
+    margin:100px auto;
+    padding:50px;
 }
 
 
+.clear-float{
+    clear:both;
+}
 
-footer {
-    height: 20vh;
-    width: 100vw;
-    max-width: 100%;
-    background-color: black;
-    clear: both;
-    color: white;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    height:20vh;
+    width:100vw;
+    max-width:100%;
+    background-color:black;
+    clear:both;
+    color:white;
+
+
 }
