@@ -14,17 +14,22 @@ namespace eCommerce
 {
     public partial class AllProducts : System.Web.UI.Page
     {
+        string test = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
         string query = "Select * from ProductTable";
         protected void Page_Load(object sender, EventArgs e)
         {
-            productdis();
+            if (!IsPostBack)
+            {
+                productdis();
+            }
+            
         }
         protected void productdis()
         {
            // DataOps dOps = new DataOps();
            // allProductTable.DataSource= dOps.GetData(query);
            // allProductTable.DataBind();
-            string test = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+            
             SqlConnection con = new SqlConnection(test);
             con.Open();
             SqlCommand cmd = new SqlCommand(query, con);
@@ -37,5 +42,36 @@ namespace eCommerce
         {
 
         }
+
+        protected void allProductTable_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
+        {
+
+        }
+
+        protected void allProductTable_RowUpdating(object sender, GridViewUpdateEventArgs e)
+        {
+
+        }
+
+        protected void allProductTable_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+
+        }
+
+        protected void allProductTable_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+
+        }
+        private void DeleteProduct(int ProductID)
+        {
+            using (SqlConnection con = new SqlConnection(test))
+            {
+                string query = "delete  from ProductTable where ProductID ='"+ProductID+"'";
+                SqlCommand cmd = new SqlCommand(query, con);
+                con.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
+        
     }
 }
