@@ -15,13 +15,13 @@
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
                         <asp:BoundField DataField="OrderID" HeaderText="OrderID" InsertVisible="False" ReadOnly="True" SortExpression="OrderID" />
-                        <asp:BoundField DataField="CustomerUserName" HeaderText="CustomerUserName" SortExpression="CustomerUserName" />
-                        <asp:BoundField DataField="ProductID" HeaderText="ProductID" SortExpression="ProductID" />
-                        <asp:TemplateField HeaderText="OrderStatus" SortExpression="OrderStatus">
+                        <asp:BoundField DataField="CustomerUserName" HeaderText="Customer UserName" ReadOnly="True" SortExpression="CustomerUserName" />
+                        <asp:BoundField DataField="ProductID" HeaderText="Product ID" ReadOnly="True" SortExpression="ProductID" />
+                        <asp:TemplateField HeaderText="Order Status" SortExpression="OrderStatus">
                             <EditItemTemplate>
-                                <asp:DropDownList ID="DropDownList1" runat="server">
-                                    <asp:ListItem Selected="True">Pending</asp:ListItem>
-                                    <asp:ListItem>Done</asp:ListItem>
+                                <asp:DropDownList ID="DropDownList1" runat="server" SelectedValue='<%# Bind("OrderStatus") %>'>
+                                    <asp:ListItem>Pending</asp:ListItem>
+                                    <asp:ListItem>Delivered </asp:ListItem>
                                 </asp:DropDownList>
                             </EditItemTemplate>
                             <ItemTemplate>
@@ -41,15 +41,8 @@
                     <SortedDescendingCellStyle BackColor="#D4DFE1" />
                     <SortedDescendingHeaderStyle BackColor="#15524A" />
                 </asp:GridView>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=DESKTOP-8U59PQN;Initial Catalog=ECommerce;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT * FROM [OrderTable]" DeleteCommand="DELETE FROM [OrderTable] WHERE [OrderID] = @OrderID" InsertCommand="INSERT INTO [OrderTable] ([CustomerUserName], [ProductID], [OrderStatus]) VALUES (@CustomerUserName, @ProductID, @OrderStatus)" UpdateCommand="UPDATE [OrderTable] SET [CustomerUserName] = @CustomerUserName, [ProductID] = @ProductID, [OrderStatus] = @OrderStatus WHERE [OrderID] = @OrderID">
-                    <DeleteParameters>
-                        <asp:Parameter Name="OrderID" Type="Int32" />
-                    </DeleteParameters>
-                    <InsertParameters>
-                        <asp:Parameter Name="CustomerUserName" Type="String" />
-                        <asp:Parameter Name="ProductID" Type="Int32" />
-                        <asp:Parameter Name="OrderStatus" Type="String" />
-                    </InsertParameters>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=DESKTOP-8U59PQN;Initial Catalog=ECommerce;Integrated Security=True"  SelectCommand="SELECT * FROM [OrderTable]" UpdateCommand="UPDATE [OrderTable] SET  [OrderStatus] = @OrderStatus WHERE [OrderID] = @OrderID">
+                    
                     <UpdateParameters>
                         <asp:Parameter Name="CustomerUserName" Type="String" />
                         <asp:Parameter Name="ProductID" Type="Int32" />
