@@ -44,6 +44,8 @@
                 <SortedDescendingHeaderStyle BackColor="#15524A" />
             </asp:GridView>
 
+                <asp:Button ID="btnSeeAllOrders" runat="server" OnClick="btnSeeAllOrders_Click" Text="See All Orders" />
+
             <asp:Button ID="btnEditMode" runat="server" OnClick="btnEditMode_Click" Text="Editing Mode" />
 &nbsp;<asp:Button ID="btnSave" runat="server" OnClick="btnSave_Click" Text="Save" />
 &nbsp;<asp:Button ID="btnAddNewProduct" runat="server" OnClick="btnAddNewProduct_Click" Text="Add New Product" />
@@ -56,7 +58,7 @@
                     <asp:BoundField DataField="ProductPrice" HeaderText="ProductPrice" SortExpression="ProductPrice" />
                 </Columns>
             </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=DESKTOP-8U59PQN;Initial Catalog=ECommerce;Integrated Security=True" DeleteCommand="DELETE FROM [ProductTable] WHERE [ProductID] = @ProductID" InsertCommand="INSERT INTO [ProductTable] ([ProductName], [ProductCat], [ProductPrice]) VALUES (@ProductName, @ProductCat, @ProductPrice)" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [ProductID], [ProductName], [ProductCat], [ProductPrice] FROM [ProductTable]" UpdateCommand="UPDATE [ProductTable] SET [ProductName] = @ProductName, [ProductCat] = @ProductCat, [ProductPrice] = @ProductPrice WHERE [ProductID] = @ProductID">
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=DESKTOP-7FMHL75;Initial Catalog=ECommerce;Integrated Security=True" DeleteCommand="DELETE FROM [ProductTable] WHERE [ProductID] = @ProductID" InsertCommand="INSERT INTO [ProductTable] ([ProductName], [ProductCat], [ProductPrice]) VALUES (@ProductName, @ProductCat, @ProductPrice)" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [ProductID], [ProductName], [ProductCat], [ProductPrice] FROM [ProductTable]" UpdateCommand="UPDATE [ProductTable] SET [ProductName] = @ProductName, [ProductCat] = @ProductCat, [ProductPrice] = @ProductPrice WHERE [ProductID] = @ProductID">
                 <DeleteParameters>
                     <asp:Parameter Name="ProductID" Type="Int32" />
                 </DeleteParameters>

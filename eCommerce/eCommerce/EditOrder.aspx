@@ -41,7 +41,7 @@
                     <SortedDescendingCellStyle BackColor="#D4DFE1" />
                     <SortedDescendingHeaderStyle BackColor="#15524A" />
                 </asp:GridView>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=DESKTOP-8U59PQN;Initial Catalog=ECommerce;Integrated Security=True"  SelectCommand="SELECT * FROM [OrderTable]" UpdateCommand="UPDATE [OrderTable] SET  [OrderStatus] = @OrderStatus WHERE [OrderID] = @OrderID">
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=DESKTOP-7FMHL75;Initial Catalog=ECommerce;Integrated Security=True"  SelectCommand="SELECT * FROM [OrderTable]" UpdateCommand="UPDATE [OrderTable] SET  [OrderStatus] = @OrderStatus WHERE [OrderID] = @OrderID">
                     
                     <UpdateParameters>
                         <asp:Parameter Name="CustomerUserName" Type="String" />

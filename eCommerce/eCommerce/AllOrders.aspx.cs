@@ -44,5 +44,10 @@ namespace eCommerce
         {
             
         }
+
+        protected void btnSeeAllProducts_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AllProducts.aspx");
+        }
     }
 }

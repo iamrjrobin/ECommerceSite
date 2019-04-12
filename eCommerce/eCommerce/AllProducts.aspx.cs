@@ -101,5 +101,10 @@ namespace eCommerce
         {
             Response.Redirect("ManagerAddProduct.aspx");
         }
+
+        protected void btnSeeAllOrders_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AllOrders.aspx");
+        }
     }
 }
