@@ -69,7 +69,6 @@ C:\Users\IamRJ\Documents\GitHub\ECommerceSite\eCommerce\eCommerce\bin\roslyn\vbc
 C:\Users\IamRJ\Documents\GitHub\ECommerceSite\eCommerce\eCommerce\bin\roslyn\vbc.rsp
 C:\Users\IamRJ\Documents\GitHub\ECommerceSite\eCommerce\eCommerce\bin\roslyn\VBCSCompiler.exe
 C:\Users\IamRJ\Documents\GitHub\ECommerceSite\eCommerce\eCommerce\bin\roslyn\VBCSCompiler.exe.config
-
 D:\Github\ECommerceSite\eCommerce\eCommerce\bin\eCommerce.dll.config
 D:\Github\ECommerceSite\eCommerce\eCommerce\bin\eCommerce.dll
 D:\Github\ECommerceSite\eCommerce\eCommerce\bin\eCommerce.pdb
@@ -141,7 +140,6 @@ D:\Github\ECommerceSite\eCommerce\eCommerce\obj\Debug\eCommerce.csproj.CoreCompi
 D:\Github\ECommerceSite\eCommerce\eCommerce\obj\Debug\eCommerce.csproj.CopyComplete
 D:\Github\ECommerceSite\eCommerce\eCommerce\obj\Debug\eCommerce.dll
 D:\Github\ECommerceSite\eCommerce\eCommerce\obj\Debug\eCommerce.pdb
-
 C:\Users\Robin\Documents\GitHub\ECommerceSite\eCommerce\eCommerce\bin\Newtonsoft.Json.xml
 C:\Users\Robin\Documents\GitHub\ECommerceSite\eCommerce\eCommerce\bin\eCommerce.dll.config
 C:\Users\Robin\Documents\GitHub\ECommerceSite\eCommerce\eCommerce\bin\eCommerce.dll
@@ -213,4 +211,3 @@ C:\Users\Robin\Documents\GitHub\ECommerceSite\eCommerce\eCommerce\obj\Debug\eCom
 C:\Users\Robin\Documents\GitHub\ECommerceSite\eCommerce\eCommerce\obj\Debug\eCommerce.dll
 C:\Users\Robin\Documents\GitHub\ECommerceSite\eCommerce\eCommerce\obj\Debug\eCommerce.pdb
 C:\Users\Robin\Documents\GitHub\ECommerceSite\eCommerce\eCommerce\obj\Debug\eCommerce.csprojAssemblyReference.cache
-
