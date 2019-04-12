@@ -106,15 +106,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-<<<<<<< HEAD
-
     <Content Include="Catagory.aspx" />
-
     <Content Include="AllProducts.aspx" />
-
-=======
     <Content Include="AllProducts.aspx" />
->>>>>>> 4a973e5ff930ba7c0b660a4958bc82a55ba7186d
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -135,6 +129,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="ManagerAddProduct.aspx" />
+    <Content Include="order.aspx" />
     <Content Include="Product_view.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -221,6 +216,13 @@
     </Compile>
     <Compile Include="ManagerAddProduct.aspx.designer.cs">
       <DependentUpon>ManagerAddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="order.aspx.cs">
+      <DependentUpon>order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="order.aspx.designer.cs">
+      <DependentUpon>order.aspx</DependentUpon>
     </Compile>
     <Compile Include="Product_view.aspx.cs">
       <DependentUpon>Product_view.aspx</DependentUpon>

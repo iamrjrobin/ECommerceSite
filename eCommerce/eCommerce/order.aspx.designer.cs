@@ -10,24 +10,24 @@
 namespace eCommerce {
     
     
-    public partial class SiteMaster {
+    public partial class order {
         
         /// <summary>
-        /// login_link control.
+        /// orderDiv control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl login_link;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl orderDiv;
         
         /// <summary>
-        /// MainContent control.
+        /// orderBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.Button orderBtn;
     }
 }

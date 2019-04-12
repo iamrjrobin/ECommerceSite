@@ -4,14 +4,14 @@
 
     <div class="product_view_main">
         <div class="left">
-           <h1 >Intel core i3</h1>
+           <h1 id="elname" runat="server">Intel core i3</h1>
            <p class="productDescription">Lorem ipsum dolar sit.Lorem ipsum dolar sit.Lorem ipsum dolar sit.Lorem ipsum dolar sit.Lorem ipsum dolar sit.Lorem ipsum dolar sit.</p>
-           <p class="productPrice" > Price  -  160$</p>
+           <p id="elprice" runat="server" class="productPrice" > Price  -  160$</p>
 
 
-            <asp:Button CssClass="productBtn" Text="Order" runat="server" />
+            <asp:Button ID="orderBtn" CssClass="productBtn" Text="Order" runat="server" OnClick="orderBtn_Click" />
         </div>
-        <img class="right" src="images/Capture2.PNG" alt="Alternate Text" />
+        <img id="elimage" runat="server" class="right" src="images/Capture2.PNG" alt="Alternate Text" />
 
         <div class="clear-float"></div>
 

@@ -1,11 +1,11 @@
 ﻿/* Move down content because we have a fixed navbar that is 50px tall */
 body {
     padding-top: 50px;
-
+   
 }
+
 *{
     box-sizing:border-box;
-
 }
 
 /* Wrapping element */
@@ -21,6 +21,10 @@ select,
 textarea {
     max-width: 280px;
 }
+.container{
+    min-height:100%;
+}
+
 
 
 /* Responsive: Portrait tablets and up */
@@ -39,6 +43,9 @@ textarea {
     float:right;
     font-weight:bold;
 }
+.dropdown-item{
+    display:block;
+}
 .search{
     border-radius:20px;
     width:200px;
@@ -52,7 +59,9 @@ textarea {
 /* Shop */
 
 
-
+.catagory{
+    width:100%;
+}
 
 .pTitle{
     font-size:1.8em;
@@ -78,46 +87,44 @@ textarea {
 .line{
     height:2px;
     width:500px;
-    margin:50px auto;
+    margin:90px auto;
     background-color:black;
     clear:both;
 
 }
 .moreBtn{
     float:right;
+    font-size:1.2em;
+    color:black;
     background-color:rgba(10,10,10,0);
     height:50px;
-    width:120px;
+    width:130px;
     border:solid black 2px;
     margin:40px 50px ;
+    padding:13px 5px;
+    clear:both;
 
 }
 .moreBtn:hover{
     background-color:black;
     color:white;
 }
-.btn-group{
-    width:100%;
-}
-.buyBtn:first-child{
-    background-color:aquamarine;
-}
-.buyBtn:last-child{
-    background-color:aqua;
-}
-.buyBtn {
- 
-    height: 30px;
-    width: 40%;
-    border: none;
-    font-weight:600;
 
-    display:block;
-    margin:5px auto;
+.buyBtn {
+    background-color: #26A69A;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border: none;
+    font-weight: 400;
+    display: block;
+    margin: 5px auto;
+    font-size: 1.3em;
+    padding-top: 8px;
 }
 .buyBtn:hover {
-        background-color: white;
-       border: 2px solid #00FFA2;
+    background-color: white;
+    border: 2px solid #26A69A;
 }
 
 
@@ -130,7 +137,8 @@ textarea {
 }
 .right {
     float: right;
-    width:40%;
+    height:300px;
+    width:300px;
 }
 .product_view_main{
     margin:100px auto;
@@ -153,26 +161,19 @@ textarea {
     margin-top:20px;
 }
 .productBtn{
-    height:50px;
-    width:120px;
-    border:2px solid;
-    border-radius:5px;
-    background-color:#ff7d6b;
-    font-size:1.5em;
-    margin-top:20px;
-
+    height: 50px;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    background-color: #EE6E73;
+    font-weight:bold;
+    font-size: 1.5em;
+    margin-top: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
+#login_link{
+    display:inline;
+    font-size:1.3em;
+}
 
 
 
@@ -184,7 +185,6 @@ footer{
     background-color:black;
     clear:both;
     color:white;
-
-
+    margin-top:200px;
 }
 

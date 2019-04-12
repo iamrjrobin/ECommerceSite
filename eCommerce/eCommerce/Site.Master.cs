@@ -11,7 +11,14 @@ namespace eCommerce
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["Cid"] == null)
+            {
+                login_link.InnerHtml = "<a href=\"#\">Sign in</a>";
+            }
+            else
+            {
+                login_link.InnerHtml = Session["Cname"].ToString();
+            }
         }
     }
 }

@@ -13,7 +13,7 @@
     </asp:PlaceHolder>
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
-    <webopt:bundlereference runat="server" path="~/Content/site.css" />
+    <webopt:bundlereference runat="server" path="~/Content/Site.css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
@@ -51,14 +51,24 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/shop">Shop</a></li>
-                        <li><a runat="server" href="~/Product_view">Catagory</a></li>
-                        <li><a runat="server" href="~/Orders">Orders</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
+                        <li class="nav-item"><a runat="server" class="nav-link" href="~/shop">Shop</a></li>
+                        <li  class="nav-item dropdown">
+                            <a runat="server" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Catagories</a>
+                             <div class="dropdown-menu">
+                                <a runat="server" class="dropdown-item" href="~/Catagory.aspx?cat=Processor">Processor</a>
+                                <a runat="server" class="dropdown-item" href="~/Catagory.aspx?cat=Graphics card">Graphics card</a>
+                                <a runat="server" class="dropdown-item" href="~/Catagory.aspx?cat=Motherboard">Motherboard</a>
+                                <a runat="server" class="dropdown-item" href="~/Catagory.aspx?cat=Ram">Ram</a>
+                                <a runat="server" class="dropdown-item" href="~/Catagory.aspx?cat=Storage">Storage</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a runat="server" href="~/Orders">Orders</a></li>
+                        <li class="nav-item"><a runat="server" href="~/About">About</a></li>
                     </ul>
-                    
                         <input class="search" type="text" name="search" value="" placeholder="Search" />
-                    
+                <div id="login_link" runat="server">
+                    <!--<a href="#">Sign in</a>-->
+                </div>
                 </div>
             </div>
         </div>
