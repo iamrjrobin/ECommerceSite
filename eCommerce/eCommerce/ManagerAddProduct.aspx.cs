@@ -104,5 +104,10 @@ namespace eCommerce
                 lblMessage.ForeColor = System.Drawing.Color.Red; 
             }
         }
+
+        protected void btnViewAllProducts_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AllProducts.aspx");
+        }
     }
 }

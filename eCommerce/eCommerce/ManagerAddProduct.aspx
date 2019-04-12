@@ -8,7 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div style="margin-left: 520px">
             <asp:Label ID="lblProductName" runat="server" Text="Product Name"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtBoxProductName" runat="server"></asp:TextBox>
@@ -28,6 +28,8 @@
             <asp:Label ID="lblMessage" runat="server" Text="Label"></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="btnProductAdd" runat="server" OnClick="btnProductAdd_Click" Text="Add Product" />
+            <br />
+            <asp:Button ID="btnViewAllProducts" runat="server" OnClick="btnViewAllProducts_Click" Text="See All Products" />
         </div>
     </form>
 </body>
